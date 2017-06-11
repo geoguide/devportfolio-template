@@ -1,4 +1,4 @@
-ssh -Y -i /ssh-keys/node-geoff.pem ubuntu@54.153.81.103 <<EOF
+ssh -v ubuntu@54.153.81.103 <<EOF
   cd /node/webapp-server/geoguide.me
   git pull
   npm install
