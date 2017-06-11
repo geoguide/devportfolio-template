@@ -1,7 +1,7 @@
 ssh ubuntu@54.153.81.103 <<EOF
   cd ~/node/webapp-server/geoguide.me
   git pull
-  npm install --production
+  npm install
   gulp scripts
   gulp styles
   sudo pm2 restart
