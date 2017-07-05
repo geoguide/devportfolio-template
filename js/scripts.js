@@ -94,4 +94,19 @@
         });
     });
 
+    $('#contact-form-element').submit(function(e){
+      e.preventDefault();
+      var data = $(this).serialize();
+      $.ajax({
+        url: 'https://formspree.io/geoffguidetti@gmail.com',
+        method: 'POST',
+        data: data,
+        success: function(data){
+          console.log(errorThrown);
+        },error: function(jqXHR, textStatus, errorThrown){
+          console.error(data);
+        }
+      });
+    });
+
 })(jQuery);
