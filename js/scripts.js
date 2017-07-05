@@ -103,6 +103,7 @@
         data: data,
         success: function(data){
           console.log(errorThrown);
+          $('#contact-form').html('<h3>I will be in touch soon!');
         },error: function(jqXHR, textStatus, errorThrown){
           console.error(data);
         }
